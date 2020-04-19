@@ -1,0 +1,57 @@
+.container{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.card-container{
+    width:300px;
+    height: 300px;
+  
+
+}
+.card{
+    width:100%;
+    height: 100%;
+    /* background-color: aqua; */
+    transition: transform 4s ease-in-out;
+    transform-style: preserve-3d;
+}
+.card-container:hover .card{
+    transform: rotateY(180deg)
+
+}
+.card figure{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    margin:0;
+    border: 1px solid grey;
+    
+}
+.card .front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+
+}
+.card .back{
+    object-fit: cover;
+    transform: rotateY(180deg);
+}
+.imgStyle{
+    width:300px;
+    height:300px;
+}
+.openInWebBtn{
+    border-radius: 30px;
+    border: 1px solid grey;
+    padding: 10px 10px;
+    background-color: white;
+}
+
+ 
